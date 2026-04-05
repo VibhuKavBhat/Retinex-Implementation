@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Kav Bhat"
+  given-names: "Vibhu"  
+- family-names: "Dinesh"
+  given-names: "Avilash"  
+title: "Retinex Algorithm Comparison for Image Enhancement"
+version: 1.0.0
+date-released: 2026-04-05
+url: "https://github.com/VibhuKavBhat/Retinex-Implementation"
