@@ -1,12 +1,7 @@
 # Retinex Algorithm Comparison for Image Enhancement
 
-<table>
-  <tr>
-    <td><img src="images/pinkpanther_example.png" alt="Original Image" width="650"/></td>
-    <td><img src="images/yakshagana_example.png" alt="MSRCR Result" width="650"/></td>
-    
-  </tr>
-</table>
+<img src="images/pinkpanther_example.png" alt="Algorithm Comparison Preview" width="700">
+<img src="images/yakshagana_example.png" alt="Algorithm Comparison Preview" width="700">
 
 ## Overview
 Retinex theory (coined from the terms *Retina* + *Cortex*) states that an image can be separated into two main components: its reflectance and its illuminance. This repository implements several classic and modern Retinex-based algorithms to mathematically estimate and remove the illuminance factor, thereby enhancing image quality. 
@@ -61,3 +56,9 @@ Our comparative analysis indicates that there is no universal, "one-size-fits-al
 * **RBPCELA:** This method proves highly effective for scenes characterized by extreme backlighting or silhouetted subjects. Because its lumination adaptation relies on a global adaptive gamma curve rather than local spatial filtering, it uniquely avoids the undesirable "haloing" artifacts that frequently plague multi-scale algorithms at high-contrast boundaries. It does, however, tend to flatten global contrast in uniformly lit images.
   
 * **IRIE:** Our results show that IRIE’s reliance on bilateral filtering within the HSV color space makes it highly unstable when processing high-frequency organic textures (e.g., fur, foliage, macro wildlife), often generating severe visual artifacts. However, it performs exceptionally well on synthetic, cell-shaded, or digital imagery, where it successfully smooths flat color gradients while sharply preserving distinct geometric boundaries.
+
+
+## References
+If you wish to read the foundational theories behind these implementations, please refer to the original publication:
+
+[1] A. S. Parihar and K. Singh, "A study on Retinex based method for image enhancement," *2018 2nd International Conference on Inventive Systems and Control (ICISC)*, Coimbatore, India, 2018, pp. 619-624, doi: 10.1109/ICISC.2018.8398874.
