@@ -1,5 +1,13 @@
 # Retinex Algorithm Comparison for Image Enhancement
 
+<table>
+  <tr>
+    <td><img src="images/pinkpanther_example.png" alt="Original Image" width="650"/></td>
+    <td><img src="images/yakshagana_example.png" alt="MSRCR Result" width="650"/></td>
+    
+  </tr>
+</table>
+
 ## Overview
 Retinex theory (coined from the terms *Retina* + *Cortex*) states that an image can be separated into two main components: its reflectance and its illuminance. This repository implements several classic and modern Retinex-based algorithms to mathematically estimate and remove the illuminance factor, thereby enhancing image quality. 
 
@@ -29,12 +37,18 @@ You can explore the implementations in two ways:
 2. **Standalone Script:** Run the `.py` script from your terminal to process individual images through the pipeline. 
 
 ## Dataset & Testing Methodology
-To stress-test the algorithms, the dataset includes highly specific edge cases designed to break standard color-space and filtering assumptions:
+To facilitate immediate testing and reproducibility, a set of sample images is provided in the `images/` directory of this repository. 
+
+These images were specifically selected to stress-test the algorithms and break standard color-space and filtering assumptions. The test cases include:
 * Standard daylight with haze/glare
 * High-frequency organic textures (macro wildlife, fur, foliage)
 * Extreme backlighting (silhouettes)
-* Extreme low-light with point light sources (night fires)
+* Extreme low-light with point light sources (nocturnal fires)
 * Synthetic/Cell-shaded images (uniform color boundaries)
+
+Users are encouraged to run the program using these provided assets to replicate the observations below.
+
+PS: Most of these images were clicked by me :)
 
 ## Observations & Results
 
